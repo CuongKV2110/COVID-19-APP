@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    tools:ignore="UseCompoundDrawables">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:id="@+id/imageFlag"
+        android:padding="5dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCountryName"
+        android:layout_gravity="center_vertical"
+        android:text="@string/countries"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+</LinearLayout>
