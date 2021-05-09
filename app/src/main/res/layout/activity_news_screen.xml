@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:scaleType="fitStart"
             android:adjustViewBounds="true"
-            android:src="@drawable/covid19"
+            android:src="@drawable/bienphap"
             android:contentDescription="@string/todo">
         </ImageView>
         <TextView

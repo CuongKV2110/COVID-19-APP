@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     ScrollView scrollView;
     PieChart pieChart;
     Button btnNews;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,18 +51,17 @@ public class MainActivity extends AppCompatActivity {
         pieChart = findViewById(R.id.piechart);
         btnNews = findViewById(R.id.btnNewTrack);
 
-        btnNews = findViewById(R.id.btnNewTrack);
+        btnNews = (Button) findViewById(R.id.btnNewTrack);
         btnNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openNewsScreen();
             }
         });
-
-
         fetchData();
 
     }
+
     public void openNewsScreen(){
         Intent intent = new Intent(this, NewsScreen.class);
         startActivity(intent);
@@ -91,18 +91,15 @@ public class MainActivity extends AppCompatActivity {
                             tvAffectedCountries.setText(jsonObject.getString("affectedCountries"));
 
 
-                            pieChart.addPieSlice(new PieModel("Cases",Integer.parseInt(tvCases.getText().toString()), Color.parseColor("#FFA726")));
-                            pieChart.addPieSlice(new PieModel("Recoverd",Integer.parseInt(tvRecovered.getText().toString()), Color.parseColor("#66BB6A")));
-                            pieChart.addPieSlice(new PieModel("Deaths",Integer.parseInt(tvTotalDeaths.getText().toString()), Color.parseColor("#EF5350")));
-                            pieChart.addPieSlice(new PieModel("Active",Integer.parseInt(tvActive.getText().toString()), Color.parseColor("#29B6F6")));
+                            pieChart.addPieSlice(new PieModel("Tổng Số Ca Bệnh",Integer.parseInt(tvCases.getText().toString()), Color.parseColor("#FFA726")));
+                            pieChart.addPieSlice(new PieModel("Đã Khỏi",Integer.parseInt(tvRecovered.getText().toString()), Color.parseColor("#66BB6A")));
+                            pieChart.addPieSlice(new PieModel("Tử Vong",Integer.parseInt(tvTotalDeaths.getText().toString()), Color.parseColor("#EF5350")));
+                            pieChart.addPieSlice(new PieModel("Số Ca Hoạt Động",Integer.parseInt(tvActive.getText().toString()), Color.parseColor("#29B6F6")));
                             pieChart.startAnimation();
 
                             simpleArcLoader.stop();
                             simpleArcLoader.setVisibility(View.GONE);
                             scrollView.setVisibility(View.VISIBLE);
-
-
-
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -110,8 +107,6 @@ public class MainActivity extends AppCompatActivity {
                             simpleArcLoader.setVisibility(View.GONE);
                             scrollView.setVisibility(View.VISIBLE);
                         }
-
-
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -128,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
     public void goTrackCountries(View view) {
 
         startActivity(new Intent(getApplicationContext(),AffectedCountries.class));

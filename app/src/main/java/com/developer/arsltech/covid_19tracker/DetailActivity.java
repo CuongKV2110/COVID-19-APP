@@ -8,19 +8,21 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 public class DetailActivity extends AppCompatActivity {
 
-    private  int positionCountry;
     TextView tvCountry,tvCases,tvRecovered,tvCritical,tvActive,tvTodayCases,tvTotalDeaths,tvTodayDeaths;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        int positionCountry;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
         Intent intent = getIntent();
         positionCountry = intent.getIntExtra("position",0);
 
-        getSupportActionBar().setTitle("Số liệu COVID-19 tại "+AffectedCountries.countryModelsList.get(positionCountry).getCountry());
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Số Liệu COVID-19 tại "+AffectedCountries.countryModelsList.get(positionCountry).getCountry());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

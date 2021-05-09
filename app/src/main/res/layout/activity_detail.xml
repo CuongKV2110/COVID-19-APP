@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>>>>>>> db01b09 (first commit)
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/countriesname"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -26,6 +31,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Tên Quốc Gia"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvCountry"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -33,7 +47,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -55,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/todaycases"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -63,6 +82,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Tổng Số Ca"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvCases"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -70,7 +98,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -92,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/map_recovered"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -100,6 +133,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Đã Khỏi"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvRecovered"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -107,7 +149,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -129,6 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/map_active"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -137,6 +184,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Đang Nhiễm"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvActive"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -144,7 +200,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -166,6 +226,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/deaths"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -174,6 +235,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Tử Vong"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvDeaths"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -181,7 +251,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -203,6 +277,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/todaycases"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -211,6 +286,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Số Ca Trong Ngày"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvTodayCases"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -218,7 +302,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -241,6 +329,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/todaydeaths"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -249,6 +338,15 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Tử Vong Trong ngày"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvTodayDeaths"
             android:textAlignment="textEnd"
             android:textSize="18sp"
@@ -256,7 +354,11 @@
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View
@@ -278,6 +380,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:text="@string/criticalcases"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -286,13 +389,26 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/_0"
+=======
+            android:text="Nguy Kịch"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+>>>>>>> db01b09 (first commit)
             android:id="@+id/tvCritical"
             android:textAlignment="textEnd"
             android:textSize="18sp"
             android:textColor="@color/color_one"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
+<<<<<<< HEAD
             android:layout_alignParentEnd="true"/>
+=======
+            android:layout_alignParentRight="true"/>
+>>>>>>> db01b09 (first commit)
 
     </RelativeLayout>
     <View

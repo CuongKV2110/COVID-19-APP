@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">COVID-19</string>
     <string name="trackedcountries">Quốc Gia</string>
-    <string name="countriesname">Tên Quốc Gia</string>
     <string name="news">Tin Tức</string>
     <string name="countries">Quốc Gia Nhiễm Bệnh</string>
     <string name="todaydeaths">Tử Vong Trong Ngày</string>
@@ -16,6 +15,7 @@
     <string name="map_deaths">Tử Vong</string>
     <string name="map_recovered">Đã Khỏi Bệnh</string>
     <string name="map_totalcases">Tổng Số Ca Bệnh</string>
+    <string name="todo">TODO</string>
     <string name="address">Địa Chỉ</string>
     <string name="phone">Số Điện Thoại</string>
     <string name="name">Họ Tên</string>
@@ -35,7 +35,4 @@
     <string name="cccd">Căn Cước Công Dân</string>
     <string name="gioitinh">Giới Tính</string>
     <string name="inhoa">Viết In Hoa</string>
-    <string name="_0">0</string>
-    <string name="search">Tìm Kiếm</string>
-    <string name="todo">TODO</string>
 </resources>

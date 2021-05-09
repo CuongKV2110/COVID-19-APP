@@ -1,5 +1,6 @@
 package com.developer.arsltech.covid_19tracker;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,7 +37,7 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_custom_item,null,true);
+        @SuppressLint({"ViewHolder", "InflateParams"}) View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_custom_item,null,true);
         TextView tvCountryName = view.findViewById(R.id.tvCountryName);
         ImageView imageView = view.findViewById(R.id.imageFlag);
 
