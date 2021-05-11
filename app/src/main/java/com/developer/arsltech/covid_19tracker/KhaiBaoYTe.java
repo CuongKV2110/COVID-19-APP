@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class KhaiBaoYTe extends AppCompatActivity {
 
-    EditText name, address, healths, phone, date, go_out, come_in, start_day, end_day, away;
+    EditText name, address, healths, phone, date, go_out, come_in, start_day, end_day, away, card;
 
     Button insert, view, update, delete;
     DBHelper DB;
@@ -36,6 +36,7 @@ public class KhaiBaoYTe extends AppCompatActivity {
         start_day = findViewById(R.id.idstartday);
         end_day = findViewById(R.id.idendday);
         away = findViewById(R.id.idaway);
+        card = findViewById(R.id.idcccd);
 
 
 
@@ -44,6 +45,7 @@ public class KhaiBaoYTe extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nameTXT = name.getText().toString();
+                String cardTXT = card.getText().toString();
                 String dateTXT = date.getText().toString();
                 String phoneTXT = phone.getText().toString();
                 String addressTXT = address.getText().toString();
@@ -51,7 +53,7 @@ public class KhaiBaoYTe extends AppCompatActivity {
                 String comeTXT = come_in.getText().toString();
                 String healthsTXT = healths.getText().toString();
 
-                boolean checker1 = DB.insertuserdata(nameTXT, dateTXT, phoneTXT, addressTXT, outTXT, comeTXT, healthsTXT);
+                boolean checker1 = DB.insertuserdata(nameTXT, cardTXT, dateTXT, phoneTXT, addressTXT, outTXT, comeTXT, healthsTXT);
                 if (checker1){
                     Toast.makeText(KhaiBaoYTe.this, "Đã Khai Báo", Toast.LENGTH_SHORT).show();
                 }
@@ -65,6 +67,7 @@ public class KhaiBaoYTe extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nameTXT = name.getText().toString();
+                String cardTXT = card.getText().toString();
                 String dateTXT = date.getText().toString();
                 String phoneTXT = phone.getText().toString();
                 String addressTXT = address.getText().toString();
@@ -72,9 +75,7 @@ public class KhaiBaoYTe extends AppCompatActivity {
                 String comeTXT = come_in.getText().toString();
                 String healthsTXT = healths.getText().toString();
 
-
-
-                boolean checker2 = DB.updateuserdata(nameTXT, dateTXT, phoneTXT, addressTXT, outTXT, comeTXT, healthsTXT);
+                boolean checker2 = DB.updateuserdata(nameTXT, cardTXT, dateTXT, phoneTXT, addressTXT, outTXT, comeTXT, healthsTXT);
                 if (checker2){
                     Toast.makeText(KhaiBaoYTe.this, "Đã Cập Nhật", Toast.LENGTH_SHORT).show();
                 }
@@ -87,8 +88,8 @@ public class KhaiBaoYTe extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nameTXT = name.getText().toString();
-                boolean checker3 = DB.deletedata(nameTXT);
+                String cardTXT = card.getText().toString();
+                boolean checker3 = DB.deletedata(cardTXT);
                 if (checker3){
                     Toast.makeText(KhaiBaoYTe.this, "Đã xóa", Toast.LENGTH_SHORT).show();
                 }
@@ -109,12 +110,13 @@ public class KhaiBaoYTe extends AppCompatActivity {
                 StringBuilder buffer = new StringBuilder();
                 while (res.moveToNext()){
                     buffer.append("Họ & Tên: ").append(res.getString(0)).append("\n");
-                    buffer.append("Ngày Sinh: ").append(res.getString(1)).append("\n");
-                    buffer.append("SĐT: ").append(res.getString(2)).append("\n");
-                    buffer.append("Địa Chỉ: ").append(res.getString(3)).append("\n");
-                    buffer.append("Nơi Đi: ").append(res.getString(4)).append("\n");
-                    buffer.append("Nơi Đến: ").append(res.getString(5)).append("\n");
-                    buffer.append("Sức Khỏe: ").append(res.getString(6)).append("\n\n");
+                    buffer.append("CCCD: ").append(res.getString(1)).append("\n");
+                    buffer.append("Ngày Sinh: ").append(res.getString(2)).append("\n");
+                    buffer.append("SĐT: ").append(res.getString(3)).append("\n");
+                    buffer.append("Địa Chỉ: ").append(res.getString(4)).append("\n");
+                    buffer.append("Nơi Đi: ").append(res.getString(5)).append("\n");
+                    buffer.append("Nơi Đến: ").append(res.getString(6)).append("\n");
+                    buffer.append("Sức Khỏe: ").append(res.getString(7)).append("\n\n");
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(KhaiBaoYTe.this);
                 builder.setCancelable(true);
