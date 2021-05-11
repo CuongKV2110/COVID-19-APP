@@ -50,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.scrollStats);
         pieChart = findViewById(R.id.piechart);
         btnNews = findViewById(R.id.btnNewTrack);
-
-        btnNews = (Button) findViewById(R.id.btnNewTrack);
         btnNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NewsScreen.class);
         startActivity(intent);
     }
-
     private void fetchData() {
 
         String url  = "https://corona.lmao.ninja/v2/all/";

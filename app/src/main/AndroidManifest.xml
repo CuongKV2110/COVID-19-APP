@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewsScreen"></activity>
+        <activity android:name=".KhaiBaoYTe"></activity>
+        <activity android:name=".NewsScreen" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".AffectedCountries" />
         <activity android:name=".MainActivity">

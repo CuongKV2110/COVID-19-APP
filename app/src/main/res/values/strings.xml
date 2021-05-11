@@ -35,4 +35,9 @@
     <string name="cccd">Căn Cước Công Dân</string>
     <string name="gioitinh">Giới Tính</string>
     <string name="inhoa">Viết In Hoa</string>
+    <string name="view">Danh Sách</string>
+    <string name="update">Cập Nhật</string>
+    <string name="delete">Xóa</string>
+    <string name="khaibaoyte1">Khai Báo Y Tế</string>
+    <string name="dateofbirth">Ngày Sinh</string>
 </resources>
