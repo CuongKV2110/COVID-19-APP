@@ -103,7 +103,6 @@ public class AffectedCountries extends AppCompatActivity {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
                         try {
                             JSONArray jsonArray = new JSONArray(response);
 
@@ -133,11 +132,6 @@ public class AffectedCountries extends AppCompatActivity {
                                 listView.setAdapter(myCustomAdapter);
                                 simpleArcLoader.stop();
                                 simpleArcLoader.setVisibility(View.GONE);
-
-
-
-
-
 
                         } catch (JSONException e) {
                             e.printStackTrace();

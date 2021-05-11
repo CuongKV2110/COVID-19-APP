@@ -95,11 +95,9 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-
                 countryModelsListFiltered = (List<CountryModel>) results.values;
                 AffectedCountries.countryModelsList = (List<CountryModel>) results.values;
                 notifyDataSetChanged();
-
             }
         };
         return filter;

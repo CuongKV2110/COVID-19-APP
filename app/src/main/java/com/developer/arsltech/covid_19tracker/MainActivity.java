@@ -26,7 +26,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView tvCases,tvRecovered,tvCritical,tvActive,tvTodayCases,tvTotalDeaths,tvTodayDeaths,tvAffectedCountries;
+    TextView tvCases, tvRecovered, tvCritical, tvActive, tvTodayCases, tvTotalDeaths, tvTodayDeaths, tvAffectedCountries;
     SimpleArcLoader simpleArcLoader;
     ScrollView scrollView;
     PieChart pieChart;
@@ -60,13 +60,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openNewsScreen(){
+    public void openNewsScreen() {
         Intent intent = new Intent(this, NewsScreen.class);
         startActivity(intent);
     }
+
     private void fetchData() {
 
-        String url  = "https://corona.lmao.ninja/v2/all/";
+        String url = "https://corona.lmao.ninja/v2/all/";
 
         simpleArcLoader.start();
 
@@ -87,11 +88,10 @@ public class MainActivity extends AppCompatActivity {
                             tvTodayDeaths.setText(jsonObject.getString("todayDeaths"));
                             tvAffectedCountries.setText(jsonObject.getString("affectedCountries"));
 
-
-                            pieChart.addPieSlice(new PieModel("Tổng Số Ca Bệnh",Integer.parseInt(tvCases.getText().toString()), Color.parseColor("#FFA726")));
-                            pieChart.addPieSlice(new PieModel("Đã Khỏi",Integer.parseInt(tvRecovered.getText().toString()), Color.parseColor("#66BB6A")));
-                            pieChart.addPieSlice(new PieModel("Tử Vong",Integer.parseInt(tvTotalDeaths.getText().toString()), Color.parseColor("#EF5350")));
-                            pieChart.addPieSlice(new PieModel("Số Ca Hoạt Động",Integer.parseInt(tvActive.getText().toString()), Color.parseColor("#29B6F6")));
+                            pieChart.addPieSlice(new PieModel("Tổng Số Ca Bệnh", Integer.parseInt(tvCases.getText().toString()), Color.parseColor("#FFA726")));
+                            pieChart.addPieSlice(new PieModel("Đã Khỏi", Integer.parseInt(tvRecovered.getText().toString()), Color.parseColor("#66BB6A")));
+                            pieChart.addPieSlice(new PieModel("Tử Vong", Integer.parseInt(tvTotalDeaths.getText().toString()), Color.parseColor("#EF5350")));
+                            pieChart.addPieSlice(new PieModel("Số Ca Hoạt Động", Integer.parseInt(tvActive.getText().toString()), Color.parseColor("#29B6F6")));
                             pieChart.startAnimation();
 
                             simpleArcLoader.stop();
@@ -120,9 +120,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     public void goTrackCountries(View view) {
 
-        startActivity(new Intent(getApplicationContext(),AffectedCountries.class));
+        startActivity(new Intent(getApplicationContext(), AffectedCountries.class));
 
     }
 }
