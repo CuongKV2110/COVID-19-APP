@@ -40,4 +40,5 @@
     <string name="delete">Xóa</string>
     <string name="khaibaoyte1">Khai Báo Y Tế</string>
     <string name="dateofbirth">Ngày Sinh</string>
+    <string name="search">Tìm Kiếm</string>
 </resources>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:background="@color/color_white"
     android:layout_height="match_parent"
-    tools:context=".AffectedCountries">
+    tools:context=".AffectedCountries"
+    tools:ignore="ExtraText">
 
     <EditText
         android:layout_width="match_parent"
@@ -14,7 +15,6 @@
         android:layout_margin="10dp"
         android:maxLines="1"
         android:singleLine="true"
-<<<<<<< HEAD
         android:paddingStart="10dp"
         android:hint="@string/search"
         android:drawablePadding="15dp"
